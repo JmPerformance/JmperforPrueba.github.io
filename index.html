@@ -12,7 +12,7 @@
 <label>Mensaje:</label>
 <textarea type="text" id="mensaje"></textarea>
     <button type="submit">Enviar<button>
-</form>
+    </form>
 <scrip
 emailjs.init("pbh2jauroFz5qU3L0");
 document.getElementById("contactform")
@@ -24,8 +24,8 @@ correo: document.getElementById("correo").value;
 mensaje: document.getElementById("mensaje").value;
  };
  emailjs.send(
-    "service_ifablax"
-    "template_5pqo65q"
+    const serviceID = 'default_service';
+     const templateID = 'template_5pqo65q';
     parametros
  )
  .then(function(){
